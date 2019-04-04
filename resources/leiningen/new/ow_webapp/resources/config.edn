@@ -1,0 +1,9 @@
+{:{{name}}/webapp                    {:channels              #ig/ref :{{name}}/msg-channels
+                                      :port                  #or [#env PORT
+                                                                  "8080"]}
+
+ :{{name}}/foo-resource              {:channels #ig/ref :{{name}}/msg-channels}
+
+ :{{name}}/router                    {:channels #ig/ref :{{name}}/msg-channels}
+
+ :{{name}}/msg-channels              {}}

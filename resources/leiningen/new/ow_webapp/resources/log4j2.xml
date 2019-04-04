@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+  <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <!-- PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" / -->
+      <!-- PatternLayout pattern="[%-5p  %23d{ISO8601}  %22.22t  %30.30c] %m%n" / -->
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg [%t]%n" />
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="{{name}}" level="debug" additivity="false">
+      <AppenderRef ref="console" />
+    </Logger>
+
+    <Logger name="ow" level="debug" additivity="false">
+      <AppenderRef ref="console" />
+    </Logger>
+
+    <Root level="info">
+      <AppenderRef ref="console" />
+    </Root>
+  </Loggers>
+</Configuration>
