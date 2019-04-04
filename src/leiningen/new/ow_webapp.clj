@@ -18,7 +18,7 @@
              ["Dockerfile"                             (render "Dockerfile" data)]
              [".dockerignore"                          (render ".dockerignore" data)]
              [".env"                                   (render ".env" data)]
-             [".gitignore"                             (render ".gitignore" data)]
+             [".gitignore"                             (render "_gitignore" data)]
              ["LICENSE"                                (render "LICENSE" data)]
              ["project.clj"                            (render "project.clj" data)]
              ["README.md"                              (render "README.md" data)]
