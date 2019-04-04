@@ -4,7 +4,15 @@ A Leiningen template for FIXME.
 
 ## Usage
 
-FIXME
+First, install this template into your local maven repo (usually `~/.m2`):
+```
+$ lein install
+```
+
+Then you can use it as a template with leiningen:
+```
+$ lein new ow-webapp my-ow-webapp-project
+```
 
 ## License
 
